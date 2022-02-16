@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "rsync -a build/ ../public/ && rm -r build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
