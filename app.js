@@ -10,7 +10,7 @@ var quoteRouter = require('./routes/quoteRouter');
 // Connecting with Mongodb Server
 mongoose.Promise = global.Promise;
 const url = 'mongodb://localhost:27017/quotesDb';
-const connect = mongoose.connect(url);
+const connect = mongoose.connect(process.env.MONGODB_URI || url);
 connect.then((db) =>{
   console.log("Connected to Mongodb Server Correctly...");
 }, (err) => console.log(err));
