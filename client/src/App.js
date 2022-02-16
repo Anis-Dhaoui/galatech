@@ -2,7 +2,7 @@ import { React, useEffect, useState } from "react";
 import AddQuoteForm from "./components/addQuoteForm";
 import RenderTasks from "./components/renderQuotes";
 import axios from 'axios';
-const url = "http://localhost:3000/";
+const url = "/";
 
 function App() {
   const [state, setState] = useState([]);
