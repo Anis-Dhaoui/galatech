@@ -15,7 +15,7 @@ export default function RenderTasks(props) {
 
     const cards = props.quotes.map(item => {
         return (
-            <div key={item._id} className='col-3 mb-2'>
+            <div key={item._id} className='col-12 col-md-3 mb-2'>
                 <Card style={{ minHeight: "300px" }}>
                     <CardHeader>{item.author}</CardHeader>
                     <CardBody>
@@ -40,7 +40,7 @@ export default function RenderTasks(props) {
                         </div>
                     </CardFooter>
                 </Card>
-            </div >
+            </div>
         )
     })
     return (
